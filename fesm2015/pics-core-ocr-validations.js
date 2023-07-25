@@ -868,8 +868,8 @@ class OcrValidationsModule {
 OcrValidationsModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: OcrValidationsModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });
 OcrValidationsModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: OcrValidationsModule, declarations: [OcrValidationsComponent,
         OcrvalidationComponent], imports: [CardModule], exports: [OcrValidationsComponent] });
-OcrValidationsModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: OcrValidationsModule, imports: [[
-            CardModule
+OcrValidationsModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: OcrValidationsModule, providers: [HttpService, PermissionStore, DataStoreService, AuthService, AuthStore, AlertService], imports: [[
+            CardModule,
         ]] });
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: OcrValidationsModule, decorators: [{
             type: NgModule,
@@ -879,8 +879,9 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "12.2.17", ngImpo
                         OcrvalidationComponent
                     ],
                     imports: [
-                        CardModule
+                        CardModule,
                     ],
+                    providers: [HttpService, PermissionStore, DataStoreService, AuthService, AuthStore, AlertService],
                     exports: [
                         OcrValidationsComponent
                     ]
